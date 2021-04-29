@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #01143d, #062e4b);
+  overflow: hidden;
+}
+
+.cenario {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/cenario_2.svg") bottom;
+  animation: slideright 600s infinite linear;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+@keyframes slideright {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000%;
+  }
+}
+
+.lua {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 300px;
+}
+
+.personagem {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  left: 100px;
+  transition: bottom 0.2s;
+}
+
+.personagem img {
+  position: absolute;
+  bottom: -14px;
+  width: 90px;
+  height: 140px;
+}
+
+.grama {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: left 1s;
+}
+
+.obstaculo {
+  position: absolute;
+  bottom: 30px;
+  background: url("./assets/grama.svg") no-repeat;
+  background-size: 100% 100%;
+  width: 60px;
+  height: 60px;
+}
+
+.game-over {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: over infinite 2s;
+}
+
+@keyframes over {
+  0% {
+    font-size: 3rem;
+  }
+  50% {
+    font-size: 3.5rem;
+  }
+  100% {
+    font-size: 3rem;
+  }
+}
