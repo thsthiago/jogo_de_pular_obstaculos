@@ -1,3 +1,3 @@
-# Jogo de pular obstáculos sem internet
+# Jogo de pular obstáculos
 
 ---
